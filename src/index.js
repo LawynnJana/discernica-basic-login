@@ -18,7 +18,7 @@ const store = createStoreWithMiddleware(reducers); //ARG: reducers
 ReactDOM.render(
 	<Provider store={store}>
 	  <BrowserRouter>
-	   <App className="container"/>
+	   <App/>
 	  </BrowserRouter>
 	</Provider>
 	, document.getElementById('root'));

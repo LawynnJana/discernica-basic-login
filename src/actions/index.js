@@ -10,7 +10,7 @@ export const isLoggedIn = status => {
 	}
 }
 
-export const loginUser = ({ username, password }) => {
+export const loginUser = ( username, password, callback ) => {
 	return dispatch => {
 		axios.post('http://dev.discernica.com:65525/login', {username, password}).then( res => {
 			dispatch({

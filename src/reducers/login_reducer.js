@@ -2,14 +2,12 @@ import {
 	LOGIN
 } from '../actions';
 
-const initialState = {
-	status: false
-}
+const initialState = {}
 
 const LoginReducer = (state = initialState, action) => {
 	switch(action.type){
 		case LOGIN:
-			return { status: action.payload };
+			return action.payload;
 		default:
 			return state;
 	}
