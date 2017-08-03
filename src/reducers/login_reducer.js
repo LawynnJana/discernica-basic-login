@@ -2,7 +2,9 @@ import {
 	LOGIN
 } from '../actions';
 
-const initialState = {}
+const initialState = {
+	status:false
+}
 
 const LoginReducer = (state = initialState, action) => {
 	switch(action.type){
