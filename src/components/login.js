@@ -65,7 +65,6 @@ class Login extends Component {
 
 const validate = values => {
 	const errors = {};
-	//console.log('a', values.username)
 	return {};
 }
 

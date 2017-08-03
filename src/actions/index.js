@@ -16,7 +16,6 @@ export const isLoggedIn = status => {
 
 export const loginUser = ( userid, password, callback ) => {
 	return dispatch => {
-		console.log('uid:', userid, ' password: ', password);
 		axios.get(`http://dev.discernica.com:65525/login`, {
 			params:{
 				userid,
